@@ -105,13 +105,19 @@ body{
 
 main{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-content: center;
   align-items: center;
   width: 1072px;
   height: 449;
   gap: 11px;
   margin: 50px auto;
+}
+
+.siparis-container{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
 }
 
 .siparis-card{
@@ -203,4 +209,30 @@ main{
 
 span{
   color: #CE2829;
+}
+
+.text-section{
+  display:flex;
+  justify-content: center;
+}
+
+.section-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-item p{
+  font-family: Satisfy;
+  font-weight: 400;
+  font-size: 32px;
+  color: #CE2829;
+}
+
+.section-item h4{
+  font-family: Barlow;
+  font-weight: 600;
+  font-size: 42px;
+  color: #292929;
 }
