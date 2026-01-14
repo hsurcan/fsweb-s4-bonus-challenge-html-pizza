@@ -15,7 +15,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100%;
   height: 100vh;
 }
 
@@ -28,7 +27,7 @@ body{
  
 .banner-content{
   position: absolute;
-  top: 15%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -38,14 +37,14 @@ body{
   color: #FDC913;
   font-family: Satisfy;
   font-weight: lighter;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .banner-content h1{
   color: #fff;
   font-family: Roboto Condensed;
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .btn{
@@ -58,6 +57,7 @@ body{
   padding: 15px 55px;
 }
 
+/*NAV*/
 .radius{
   border-radius: 50px;
 }
@@ -82,7 +82,6 @@ body{
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 50px 0;
 }
 
 .nav-item a{
@@ -95,9 +94,9 @@ body{
 /*MAIN*/
 .siparis-container{
   display: flex;
-  justify-content: center;
+  max-width: 60%;
   gap: 10px;
-  margin: 50px auto;
+  margin: 50px auto 10px;
 }
 
 .siparis-box{
@@ -114,21 +113,21 @@ body{
 }
 
 .siparis-card{
-  width: 500px;
-  height: 450px;
+  width: 550px;
+  height: 440px;
   background-image: url(./public/assets/iteration-2/cta/kart-1.png);
 }
 
 .siparis-card2{
-  width: 530px;
-  height: 215px;
+  width: 500px;
+  height: 210px;
   background-image: url(./public/assets/iteration-2/cta/kart-2.png);
 }
 
 .siparis-card3{
   background-image: url(./public/assets/iteration-2/cta/kart-3.png);
-  width: 530px;
-  height: 215px;
+  width: 500px;
+  height: 210px;
 }
 
 .siparis-content{
@@ -193,22 +192,20 @@ body{
 
 /*TEXT*/
 .section-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+text-align: center;
+margin-top: 50px;
 }
 
 .section-item p{
   font-family: Satisfy;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 32px;
   color: #CE2829;
 }
 
 .section-item h4{
   font-family: Barlow;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 42px;
   color: #292929;
 }
@@ -218,16 +215,13 @@ body{
 .main-flex{ 
   display: flex; 
   justify-content: space-between; 
-  align-items: stretch; 
   gap: 20px;
   max-width: 60%;  
 }
 
 .icon-section{
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  max-width: 60%;
+  gap: 10px;
+  margin: 30px auto;
 }
 
 .icon-item{
@@ -237,11 +231,10 @@ body{
   background: #fff;
   border: none;
   font-family: Barlow;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   padding: 10px 20px;
   gap: 10px;
-  margin: 0 auto;
 }
 
 .icon-section :active{
@@ -257,35 +250,34 @@ body{
 /*PRICE*/
 
 .price-section{
-  gap: 40px;
-  margin: 30px auto;
+  max-width: 60%;
+  margin: 50px auto;
 }
 
 .price-card{
-  display: flex;
-  flex-direction: column;
+  width: 32%;
   background-color: #FFFFFF;
   padding: 30px;
   border-radius: 12px;
 }
 
 .price-card img{
-  width: 250px;
+  width: 100%;
 }
 
-.price-card p, .price-card span{
+.price-card p {
   font-family: Barlow;
-  margin-top: 20px;
+  margin: 20px 0 10px;
+  font-weight: 600;
 }
 
-.price-card p{
-  font-weight: 600;
+.price-card span{
+  font-family: Barlow;
 }
 
 .price-item {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
 }
 
 .price-item span:last-child{
@@ -294,7 +286,7 @@ body{
 
 .price-item span:first-child{
   font-size: 0.8rem;
-  word-spacing: 8rem;
+  word-spacing: 6rem;
 }
 
 
@@ -305,7 +297,8 @@ footer{
 
 .last-section{
   max-width: 60%;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .iletisim, .hot-menu, .instagram, .copyright p{
@@ -330,8 +323,8 @@ footer{
 }
 
 .logo-footer{
-  width: 10rem;
-  margin-top: 50px;
+  width: 180px;
+  padding: 20px 0;
   margin-bottom: 20px;
 }
 
@@ -357,8 +350,68 @@ footer{
   padding: 5px;
 }
 
+footer hr {
+  border: 1px solid #333;
+}
+
 .copyright {
   color: #FFFFFF;
   padding: 30px 0;
   margin: 0 auto;
 }
+
+@media (max-width: 768px){
+
+  body{
+    min-width: 350px;
+  }
+
+  .nav-flex, .icon-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: fit-content;
+    max-width: 50%;
+    padding: 50px 0;
+    gap: 20px;
+  }
+
+  .siparis-container{
+    flex-wrap: wrap;
+    margin: 50px auto;
+    min-width: 450px;
+  }
+
+  .siparis-card{
+    height: 330px;
+    margin-bottom: 10px;
+  }
+
+  .siparis-card2, .siparis-card3{
+    height: 270px;
+    width: 450px;
+  }
+
+  .section-item{
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .price-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    min-width: 450px;
+  }
+
+  .price-card{
+    width: 100%;
+  }
+
+  .last-section{
+    flex-wrap: wrap;
+  }
+
+};
