@@ -346,8 +346,10 @@ footer{
   gap: 15px;
 }
 
-.instagram img{
-  padding: 5px;
+.ig-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 footer hr {
@@ -360,11 +362,7 @@ footer hr {
   margin: 0 auto;
 }
 
-@media (max-width: 768px){
-
-  body{
-    min-width: 350px;
-  }
+@media (max-width: 600px){
 
   .nav-flex, .icon-section{
     display: grid;
